@@ -24,4 +24,8 @@ class Bike
 		@broken = false
 	end
 
+	def available_bikes
+		@bikes.reject {|bike| bike.broken? }
+	end
+
 end
